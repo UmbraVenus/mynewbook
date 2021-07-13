@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # Daily Deviations
+
 # In[1]:
 
 
@@ -31,7 +33,6 @@ for deviation in dailydeviations:
 #for key, value in jr.items():
     #  print(key, ":", value)
     if jr:
-        print(jr["src"])
 
         response = requests.get(jr["src"],stream=True)
         img = Image.open(response.raw)

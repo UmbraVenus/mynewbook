@@ -6,3 +6,4 @@ pillow
 deviantart
 opencv-contrib-python
 imutils
+ipywidgets
