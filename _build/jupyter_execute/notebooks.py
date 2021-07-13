@@ -20,24 +20,24 @@ import cv2
 # In[2]:
 
 
-def show_daily_deviations(dailydeviations):
-    da = deviantart.Api("16260","66397f4afec59514bdf212884f4e0d74")
-    dailydeviations = da.browse_dailydeviations()
-    for deviation in dailydeviations:
-    #print(da.get_deviation_metadata(deviation.deviationid)[0]["description"])
-    #print(deviation.content)
+
+da = deviantart.Api("16260","66397f4afec59514bdf212884f4e0d74")
+dailydeviations = da.browse_dailydeviations()
+for deviation in dailydeviations:
+#print(da.get_deviation_metadata(deviation.deviationid)[0]["description"])
+#print(deviation.content)
     
-        jr = deviation.content
-    #for key, value in jr.items():
-      #  print(key, ":", value)
-        if jr:
-            print(jr["src"])
+    jr = deviation.content
+#for key, value in jr.items():
+    #  print(key, ":", value)
+    if jr:
+        print(jr["src"])
 
-            response = requests.get(jr["src"],stream=True)
-            img = Image.open(response.raw)
+        response = requests.get(jr["src"],stream=True)
+        img = Image.open(response.raw)
 
-            plt.imshow(img)
-            plt.show()
+        plt.imshow(img)
+        plt.show()
 
 
 # In[3]:
