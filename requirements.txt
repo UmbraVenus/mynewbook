@@ -1,0 +1,8 @@
+jupyter-book
+matplotlib
+numpy
+requests
+pillow
+deviantart
+opencv-contrib-python
+imutils
