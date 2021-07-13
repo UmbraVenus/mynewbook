@@ -84,7 +84,7 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
-   Welcome to your Jupyter Book
+   Welcome to Deviant Art and Augmented Reality by Sage
   </a>
  </li>
 </ul>
@@ -228,26 +228,71 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">show_daily_deviations</span><span class="p">(</span><span class="n">dailydeviations</span><span class="p">):</span>
-    <span class="n">da</span> <span class="o">=</span> <span class="n">deviantart</span><span class="o">.</span><span class="n">Api</span><span class="p">(</span><span class="s2">&quot;16260&quot;</span><span class="p">,</span><span class="s2">&quot;66397f4afec59514bdf212884f4e0d74&quot;</span><span class="p">)</span>
-    <span class="n">dailydeviations</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">browse_dailydeviations</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">deviation</span> <span class="ow">in</span> <span class="n">dailydeviations</span><span class="p">:</span>
-    <span class="c1">#print(da.get_deviation_metadata(deviation.deviationid)[0][&quot;description&quot;])</span>
-    <span class="c1">#print(deviation.content)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">da</span> <span class="o">=</span> <span class="n">deviantart</span><span class="o">.</span><span class="n">Api</span><span class="p">(</span><span class="s2">&quot;16260&quot;</span><span class="p">,</span><span class="s2">&quot;66397f4afec59514bdf212884f4e0d74&quot;</span><span class="p">)</span>
+<span class="n">dailydeviations</span> <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">browse_dailydeviations</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">deviation</span> <span class="ow">in</span> <span class="n">dailydeviations</span><span class="p">:</span>
+<span class="c1">#print(da.get_deviation_metadata(deviation.deviationid)[0][&quot;description&quot;])</span>
+<span class="c1">#print(deviation.content)</span>
     
-        <span class="n">jr</span> <span class="o">=</span> <span class="n">deviation</span><span class="o">.</span><span class="n">content</span>
-    <span class="c1">#for key, value in jr.items():</span>
-      <span class="c1">#  print(key, &quot;:&quot;, value)</span>
-        <span class="k">if</span> <span class="n">jr</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">jr</span><span class="p">[</span><span class="s2">&quot;src&quot;</span><span class="p">])</span>
+    <span class="n">jr</span> <span class="o">=</span> <span class="n">deviation</span><span class="o">.</span><span class="n">content</span>
+<span class="c1">#for key, value in jr.items():</span>
+    <span class="c1">#  print(key, &quot;:&quot;, value)</span>
+    <span class="k">if</span> <span class="n">jr</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">jr</span><span class="p">[</span><span class="s2">&quot;src&quot;</span><span class="p">])</span>
 
-            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">jr</span><span class="p">[</span><span class="s2">&quot;src&quot;</span><span class="p">],</span><span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-            <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">raw</span><span class="p">)</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">jr</span><span class="p">[</span><span class="s2">&quot;src&quot;</span><span class="p">],</span><span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">raw</span><span class="p">)</span>
 
-            <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
-            <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/362876a6-536a-4853-97fa-ef1deca63c49/dekiqfo-ce982c50-77e0-4591-9e0c-e26bfa0933d7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM2Mjg3NmE2LTUzNmEtNDg1My05N2ZhLWVmMWRlY2E2M2M0OVwvZGVraXFmby1jZTk4MmM1MC03N2UwLTQ1OTEtOWUwYy1lMjZiZmEwOTMzZDcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.QNk_W4Fccl_gwhDD_obcFqUSUzlEw7zgg1zN252JnHA
+</pre></div>
+</div>
+<img alt="_images/notebooks_1_1.png" src="_images/notebooks_1_1.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6f131d22-7974-4793-9db3-2160376b5c72/dem2g7x-9d2363a6-2ec0-4ea0-9b68-4907da2158f0.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZmMTMxZDIyLTc5NzQtNDc5My05ZGIzLTIxNjAzNzZiNWM3MlwvZGVtMmc3eC05ZDIzNjNhNi0yZWMwLTRlYTAtOWI2OC00OTA3ZGEyMTU4ZjAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Lzx_KBU5PgA24066JgHkj1p1JA0oUytn-mTRYaVS1mY
+</pre></div>
+</div>
+<img alt="_images/notebooks_1_3.png" src="_images/notebooks_1_3.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bbe13e6f-cf08-4616-acbd-b971dcd1ee3e/demi2cz-11f12aa9-2ce6-4667-a488-bea629b2aacf.png/v1/fill/w_1024,h_1024,q_80,strp/do_the_evolution_by_aetnensis_demi2cz-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcL2JiZTEzZTZmLWNmMDgtNDYxNi1hY2JkLWI5NzFkY2QxZWUzZVwvZGVtaTJjei0xMWYxMmFhOS0yY2U2LTQ2NjctYTQ4OC1iZWE2MjliMmFhY2YucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.EumzdLO7ExgVVqHmZV2XsImA_0LzpCh0BzKEPwZQAF8
+</pre></div>
+</div>
+<img alt="_images/notebooks_1_5.png" src="_images/notebooks_1_5.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f99ac31-f300-4e62-bb51-36c995e48a45/dembja0-15e43907-8d43-44f0-9af4-afbfb2f4a25d.jpg/v1/fill/w_1600,h_2264,q_75,strp/zodiac_sign___cancer_by_niyya00_dembja0-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjI2NCIsInBhdGgiOiJcL2ZcLzRmOTlhYzMxLWYzMDAtNGU2Mi1iYjUxLTM2Yzk5NWU0OGE0NVwvZGVtYmphMC0xNWU0MzkwNy04ZDQzLTQ0ZjAtOWFmNC1hZmJmYjJmNGEyNWQuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.i5S30s1F0myOUtZNe525ZIkEKhO_LYFG0DeR_T8DR5I
+</pre></div>
+</div>
+<img alt="_images/notebooks_1_7.png" src="_images/notebooks_1_7.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/20eeddf2-8baf-46d5-b728-ef5ac9ff080c/dehzzip-3c054dc2-de36-433b-b22b-321a3bcb8b15.jpg/v1/fill/w_1280,h_1935,q_75,strp/gran_bouquet_in_vase_by_tetianakorobeinyk_dehzzip-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIwZWVkZGYyLThiYWYtNDZkNS1iNzI4LWVmNWFjOWZmMDgwY1wvZGVoenppcC0zYzA1NGRjMi1kZTM2LTQzM2ItYjIyYi0zMjFhM2JjYjhiMTUuanBnIiwiaGVpZ2h0IjoiPD0xOTM1Iiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMjBlZWRkZjItOGJhZi00NmQ1LWI3MjgtZWY1YWM5ZmYwODBjXC90ZXRpYW5ha29yb2JlaW55ay00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.PWDTNYa2eQwRRYtoE_18LWnMKCoEOv6wYEVG3SFeUAU
+</pre></div>
+</div>
+<img alt="_images/notebooks_1_9.png" src="_images/notebooks_1_9.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3742928f-4429-4de6-bad2-79457b8818be/dem5giu-8886477c-6c9b-4b1a-9a9a-e4e9aa07d65b.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM3NDI5MjhmLTQ0MjktNGRlNi1iYWQyLTc5NDU3Yjg4MThiZVwvZGVtNWdpdS04ODg2NDc3Yy02YzliLTRiMWEtOWE5YS1lNGU5YWEwN2Q2NWIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pVdhKBDHlQQwswpMXpNEBDklehdETQF2F3B065Vysq0
+</pre></div>
+</div>
+<img alt="_images/notebooks_1_11.png" src="_images/notebooks_1_11.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d2b7399c-d1d4-4ff4-8dbe-943ca16afdf2/dely6oq-c49c12ed-f699-4f8c-aa94-d0bab215e038.jpg/v1/fill/w_1280,h_1303,q_75,strp/polymorphic_mandala_by_zakata99_dely6oq-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMwMyIsInBhdGgiOiJcL2ZcL2QyYjczOTljLWQxZDQtNGZmNC04ZGJlLTk0M2NhMTZhZmRmMlwvZGVseTZvcS1jNDljMTJlZC1mNjk5LTRmOGMtYWE5NC1kMGJhYjIxNWUwMzguanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5HtJt1AzldUq9avnP8DY69OKACsMbSXMvu3K_1LQ_Mw
+</pre></div>
+</div>
+<img alt="_images/notebooks_1_13.png" src="_images/notebooks_1_13.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1cded86c-787e-442c-a0df-1faa8fc5c74a/dejyphi-d85aecd1-4fc1-42ec-bbf5-7e4f866878de.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFjZGVkODZjLTc4N2UtNDQyYy1hMGRmLTFmYWE4ZmM1Yzc0YVwvZGVqeXBoaS1kODVhZWNkMS00ZmMxLTQyZWMtYmJmNS03ZTRmODY2ODc4ZGUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cK9daR0XUWnKjzAOvZ82EGqds-F3RRWml9JhA47uPdU
+</pre></div>
+</div>
+<img alt="_images/notebooks_1_15.png" src="_images/notebooks_1_15.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9341b351-40cb-47c6-be29-dfc1bb9df6b5/del0f9i-fad87df2-5a9a-4641-bb22-9d0d93c38856.png/v1/fill/w_1024,h_2048,q_80,strp/mandelbrowser_210525_210215_by_soundlessname_del0f9i-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjA0OCIsInBhdGgiOiJcL2ZcLzkzNDFiMzUxLTQwY2ItNDdjNi1iZTI5LWRmYzFiYjlkZjZiNVwvZGVsMGY5aS1mYWQ4N2RmMi01YTlhLTQ2NDEtYmIyMi05ZDBkOTNjMzg4NTYucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.A-IVQZk-67q8GrPxg_Q2tgiTCxNMvRnfnGYIfZUPZV4
+</pre></div>
+</div>
+<img alt="_images/notebooks_1_17.png" src="_images/notebooks_1_17.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ec53a31b-b000-40e6-8bcd-08b67e7e3708/dem5pxw-d40b72de-5b16-4e25-9644-e7ec19657835.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VjNTNhMzFiLWIwMDAtNDBlNi04YmNkLTA4YjY3ZTdlMzcwOFwvZGVtNXB4dy1kNDBiNzJkZS01YjE2LTRlMjUtOTY0NC1lN2VjMTk2NTc4MzUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Ph0Wp9obqSddWQJiTPfSiUJ5_pnqYrr6dqtmPLKjGSc
+</pre></div>
+</div>
+<img alt="_images/notebooks_1_19.png" src="_images/notebooks_1_19.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/242b3bd2-74e8-4b94-900c-315e6ea627f6/dem53rm-a849ab8b-372e-4612-82d2-0107f7b2663b.jpg/v1/fill/w_1280,h_990,q_75,strp/walking_by_urbantwilight_dem53rm-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTkwIiwicGF0aCI6IlwvZlwvMjQyYjNiZDItNzRlOC00Yjk0LTkwMGMtMzE1ZTZlYTYyN2Y2XC9kZW01M3JtLWE4NDlhYjhiLTM3MmUtNDYxMi04MmQyLTAxMDdmN2IyNjYzYi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.yYbloDKUz7gm4WDJxhTJ1rdvlHePcsff-wdP3jdM7-8
+</pre></div>
+</div>
+<img alt="_images/notebooks_1_21.png" src="_images/notebooks_1_21.png" />
 </div>
 </div>
 <div class="cell docutils container">
