@@ -21,6 +21,7 @@ import sys
 import cv2
 import ipywidgets as widgets
 from IPython.display import display
+from ipywidgets import interact, interact_manual
 
 
 # In[2]:
@@ -64,5 +65,26 @@ radio = widgets.RadioButtons(
             description="Your AR Pick:",
             disabled = False
         )
-radio
+radio.value
+
+
+# In[4]:
+
+
+morefav = da.browse_morelikethis_preview(dailydeviations[radio.value])['more_from_artist']
+recommendation = []
+for x in morefav:
+    r = x.content
+    #for key, value in jr.items():
+      #  print(key, ":", value)
+    if r:
+        #print(jr["src"])
+
+        response = requests.get(r["src"],stream=True)
+        #img = Image.open(response.raw)
+        image = widgets.Image(value=response.raw.read(),format="png",width=490,height= 490)
+        #plt.imshow(img)
+        #plt.show()
+        recommendation += [image]
+widgets.GridBox(recommendation, layout=widgets.Layout(grid_template_columns="repeat(2, 500px)"))
 
