@@ -57,6 +57,8 @@ for deviation in dailydeviations:
 widgets.GridBox(dalist, layout=widgets.Layout(grid_template_columns="repeat(2, 500px)"))
 
 
+# ## Choose your fav one and get more recommendations! :D ##
+
 # In[3]:
 
 
