@@ -30,7 +30,12 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  use_thebelab_button: true  # If 'true', display a button to allow in-page running code cells with Thebelab
+  use_show_widgets_button: true  # If 'true', display a button to show widgets backed by a Binder kernel
 
-  use_thebelab_button              : true  # If 'true', display a button to allow in-page running code cells with Thebelab
-
-  use_show_widgets_button         : true  # If 'true', display a button to show widgets backed by a Binder kernel
+launch_buttons:
+  notebook_interface        : classic  # The interface interactive links will activate ["classic", "jupyterlab"]
+  binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
+  jupyterhub_url            : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
+  thebe                     : true  # Add a thebe button to pages (requires the repository to run on Binder)
+  colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
