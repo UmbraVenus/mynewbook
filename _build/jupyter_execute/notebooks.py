@@ -65,7 +65,6 @@ radio = widgets.RadioButtons(
             description="Your AR Pick:",
             disabled = False
         )
-radio.value
 
 
 # In[4]:
