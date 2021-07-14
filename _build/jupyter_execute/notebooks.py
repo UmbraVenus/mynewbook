@@ -44,7 +44,7 @@ for deviation in dailydeviations:
 
         response = requests.get(jr["src"],stream=True)
         #img = Image.open(response.raw)
-        image = widgets.Image(value=response.raw.read(),format="png",width=400,height=400)
+        image = widgets.Image(value=response.raw.read(),format="png",width=300,height=300)
         
         text = widgets.Label(
             value = str(counter),
@@ -54,7 +54,7 @@ for deviation in dailydeviations:
         #plt.show()
         dalist += [items]
         counter += 1
-widgets.GridBox(dalist, layout=widgets.Layout(grid_template_columns="repeat(2, 500px)"))
+widgets.GridBox(dalist, layout=widgets.Layout(grid_template_columns="repeat(2, 300px)"))
 
 
 # ## Choose your fav one and get more recommendations! :D ##
@@ -67,6 +67,7 @@ radio = widgets.RadioButtons(
             description="Your AR Pick:",
             disabled = False
         )
+radio
 
 
 # In[4]:
@@ -83,9 +84,9 @@ for x in morefav:
 
         response = requests.get(r["src"],stream=True)
         #img = Image.open(response.raw)
-        image = widgets.Image(value=response.raw.read(),format="png",width=490,height= 490)
+        image = widgets.Image(value=response.raw.read(),format="png",width=300,height= 300)
         #plt.imshow(img)
         #plt.show()
         recommendation += [image]
-widgets.GridBox(recommendation, layout=widgets.Layout(grid_template_columns="repeat(2, 500px)"))
+widgets.GridBox(recommendation, layout=widgets.Layout(grid_template_columns="repeat(2, 300px)"))
 

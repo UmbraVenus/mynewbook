@@ -30,3 +30,7 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+
+use_thebelab_button              : true  # If 'true', display a button to allow in-page running code cells with Thebelab
+
+use_show_widgets_button         : true  # If 'true', display a button to show widgets backed by a Binder kernel
