@@ -54,7 +54,7 @@ for deviation in dailydeviations:
         #plt.show()
         dalist += [items]
         counter += 1
-widgets.GridBox(dalist, layout=widgets.Layout(grid_template_columns="repeat(2, 300px)"))
+widgets.GridBox(dalist, layout=widgets.Layout(grid_template_columns="repeat(2, 320px)"))
 
 
 # ## Choose your fav one and get more recommendations! :D ##
