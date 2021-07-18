@@ -59,7 +59,7 @@ widgets.GridBox(dalist, layout=widgets.Layout(grid_template_columns="repeat(2, 3
 
 # ## More Recommendations ##
 
-# In[3]:
+# In[ ]:
 
 
 radio = widgets.RadioButtons(
@@ -70,7 +70,7 @@ radio = widgets.RadioButtons(
 radio
 
 
-# In[4]:
+# In[ ]:
 
 
 morefav = da.browse_morelikethis_preview(dailydeviations[radio.value])['more_from_artist']
