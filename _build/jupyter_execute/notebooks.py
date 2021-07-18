@@ -59,104 +59,21 @@ widgets.GridBox(dalist, layout=widgets.Layout(grid_template_columns="repeat(2, 3
 
 # ## More Recommendations ##
 
-# ### 1st artist ###
-
 # In[3]:
 
 
-morefav = da.browse_morelikethis_preview(dailydeviations[0])['more_from_artist']
-recommendation = []
-for x in morefav:
-    r = x.content
-    #for key, value in jr.items():
-      #  print(key, ":", value)
-    if r:
-        #print(jr["src"])
+radio = widgets.RadioButtons(
+            options = [x for x in range(1,13)],
+            description="Your AR Pick:",
+            disabled = False
+        )
+radio
 
-        response = requests.get(r["src"],stream=True)
-        #img = Image.open(response.raw)
-        image = widgets.Image(value=response.raw.read(),format="png",width=300,height= 300)
-        #plt.imshow(img)
-        #plt.show()
-        recommendation += [image]
-widgets.GridBox(recommendation, layout=widgets.Layout(grid_template_columns="repeat(2, 300px)"))
-
-
-# ### 2nd artist ###
 
 # In[4]:
 
 
-morefav = da.browse_morelikethis_preview(dailydeviations[1])['more_from_artist']
-recommendation = []
-for x in morefav:
-    r = x.content
-    #for key, value in jr.items():
-      #  print(key, ":", value)
-    if r:
-        #print(jr["src"])
-
-        response = requests.get(r["src"],stream=True)
-        #img = Image.open(response.raw)
-        image = widgets.Image(value=response.raw.read(),format="png",width=300,height= 300)
-        #plt.imshow(img)
-        #plt.show()
-        recommendation += [image]
-widgets.GridBox(recommendation, layout=widgets.Layout(grid_template_columns="repeat(2, 300px)"))
-
-
-# ### 3rd artist ###
-
-# In[5]:
-
-
-morefav = da.browse_morelikethis_preview(dailydeviations[2])['more_from_artist']
-recommendation = []
-for x in morefav:
-    r = x.content
-    #for key, value in jr.items():
-      #  print(key, ":", value)
-    if r:
-        #print(jr["src"])
-
-        response = requests.get(r["src"],stream=True)
-        #img = Image.open(response.raw)
-        image = widgets.Image(value=response.raw.read(),format="png",width=300,height= 300)
-        #plt.imshow(img)
-        #plt.show()
-        recommendation += [image]
-widgets.GridBox(recommendation, layout=widgets.Layout(grid_template_columns="repeat(2, 300px)"))
-
-
-# ### 4th artist ###
-
-# In[6]:
-
-
-morefav = da.browse_morelikethis_preview(dailydeviations[3])['more_from_artist']
-recommendation = []
-for x in morefav:
-    r = x.content
-    #for key, value in jr.items():
-      #  print(key, ":", value)
-    if r:
-        #print(jr["src"])
-
-        response = requests.get(r["src"],stream=True)
-        #img = Image.open(response.raw)
-        image = widgets.Image(value=response.raw.read(),format="png",width=300,height= 300)
-        #plt.imshow(img)
-        #plt.show()
-        recommendation += [image]
-widgets.GridBox(recommendation, layout=widgets.Layout(grid_template_columns="repeat(2, 300px)"))
-
-
-# ### 5th artist ###
-
-# In[7]:
-
-
-morefav = da.browse_morelikethis_preview(dailydeviations[4])['more_from_artist']
+morefav = da.browse_morelikethis_preview(dailydeviations[radio.value])['more_from_artist']
 recommendation = []
 for x in morefav:
     r = x.content
