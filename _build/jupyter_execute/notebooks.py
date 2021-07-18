@@ -8,48 +8,6 @@
 # In[1]:
 
 
-pip install jupyter-book
-
-
-# In[2]:
-
-
-pip install ipywidgets
-
-
-# In[3]:
-
-
-pip install requests
-
-
-# In[4]:
-
-
-pip install pillow
-
-
-# In[5]:
-
-
-pip install deviantart
-
-
-# In[6]:
-
-
-pip install opencv-contrib-python
-
-
-# In[7]:
-
-
-pip install imutils
-
-
-# In[8]:
-
-
 import requests
 import json
 from PIL import Image
@@ -66,7 +24,7 @@ from IPython.display import display
 from ipywidgets import interact, interact_manual
 
 
-# In[9]:
+# In[2]:
 
 
 da = deviantart.Api("16260","66397f4afec59514bdf212884f4e0d74")
@@ -101,7 +59,7 @@ widgets.GridBox(dalist, layout=widgets.Layout(grid_template_columns="repeat(2, 3
 
 # ## More Recommendations ##
 
-# In[10]:
+# In[3]:
 
 
 radio = widgets.RadioButtons(
@@ -112,7 +70,7 @@ radio = widgets.RadioButtons(
 radio
 
 
-# In[11]:
+# In[4]:
 
 
 morefav = da.browse_morelikethis_preview(dailydeviations[radio.value])['more_from_artist']
