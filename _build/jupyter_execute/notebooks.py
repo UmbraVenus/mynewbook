@@ -17,7 +17,6 @@ import numpy as np
 import argparse
 import imutils
 import sys
-import cv2
 import ipywidgets as widgets
 from IPython.display import display
 from ipywidgets import interact, interact_manual
