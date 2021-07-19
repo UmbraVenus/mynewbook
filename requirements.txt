@@ -7,3 +7,4 @@ deviantart
 opencv-contrib-python
 imutils
 ipywidgets
+jupyter-cache[cli]
