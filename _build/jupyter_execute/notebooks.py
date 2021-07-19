@@ -3,6 +3,12 @@
 
 # # Daily Deviations
 
+# ## In order to use this book 
+# 
+# In order to use this book, don't forget to click on the rocket icon on the top right corner and select live code
+# 
+# ![Live Code](image.png)
+
 # ## ArtWork Updated Daily ##
 
 # In[8]:
