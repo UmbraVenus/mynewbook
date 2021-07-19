@@ -1,4 +1,4 @@
-# Welcome to Deviant Art and Augmented Reality by Sage
+# Welcome to Deviant Art by Sage
 
 Welcome to deviant art pages
 

@@ -5,13 +5,12 @@
 
 # ## ArtWork Updated Daily ##
 
-# In[1]:
+# In[8]:
 
 
 import requests
 import json
 from PIL import Image
-from io import BytesIO
 import matplotlib.pyplot as plt
 import deviantart
 import numpy as np
@@ -24,7 +23,7 @@ from IPython.display import display
 from ipywidgets import interact, interact_manual
 
 
-# In[2]:
+# In[11]:
 
 
 da = deviantart.Api("16260","66397f4afec59514bdf212884f4e0d74")
@@ -59,7 +58,7 @@ widgets.GridBox(dalist, layout=widgets.Layout(grid_template_columns="repeat(2, 3
 
 # ## More Recommendations ##
 
-# In[3]:
+# In[ ]:
 
 
 radio = widgets.RadioButtons(
@@ -70,7 +69,7 @@ radio = widgets.RadioButtons(
 radio
 
 
-# In[4]:
+# In[ ]:
 
 
 morefav = da.browse_morelikethis_preview(dailydeviations[radio.value])['more_from_artist']
