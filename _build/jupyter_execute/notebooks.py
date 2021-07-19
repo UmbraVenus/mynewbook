@@ -11,13 +11,12 @@
 import requests
 import json
 from PIL import Image
+import ipywidgets as widgets
 import matplotlib.pyplot as plt
 import deviantart
 import numpy as np
 import argparse
-import imutils
 import sys
-import ipywidgets as widgets
 from IPython.display import display
 from ipywidgets import interact, interact_manual
 
