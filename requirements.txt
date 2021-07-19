@@ -5,4 +5,5 @@ requests
 pillow
 deviantart
 imutils
+opencv-contrib-python
 ipywidgets
