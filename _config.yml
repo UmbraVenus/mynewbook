@@ -1,14 +1,14 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Deviant Art
+title: Deviant Art Dreamscape
 author: Sage Ren
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: off
+  execute_notebooks: force
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -31,10 +31,11 @@ html:
   use_repository_button: true
   use_thebelab_button: true  # If 'true', display a button to allow in-page running code cells with Thebelab
   use_show_widgets_button: true  # If 'true', display a button to show widgets backed by a Binder kernel
+  navbar_number_sections: true
 
 launch_buttons:
   notebook_interface        : jupyterlab  # The interface interactive links will activate ["classic", "jupyterlab"]
   binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
   jupyterhub_url            : https://datahub.berkeley.edu  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
   thebe                     : true  # Add a thebe button to pages (requires the repository to run on Binder)
-  colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
+  colab_url                 : https://colab.research.google.com # The URL of Google Colab (https://colab.research.google.com)

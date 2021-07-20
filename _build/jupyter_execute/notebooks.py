@@ -7,11 +7,11 @@
 # 
 # In order to use this book, don't forget to click on the rocket icon on the top right corner and select live code
 # 
-# ![Live Code](image.png)
+# ![Live Code](image/image.png)
 
 # ## ArtWork Updated Daily ##
 
-# In[8]:
+# In[1]:
 
 
 import requests
@@ -27,7 +27,7 @@ from IPython.display import display
 from ipywidgets import interact, interact_manual
 
 
-# In[11]:
+# In[2]:
 
 
 da = deviantart.Api("16260","66397f4afec59514bdf212884f4e0d74")
@@ -62,7 +62,7 @@ widgets.GridBox(dalist, layout=widgets.Layout(grid_template_columns="repeat(2, 3
 
 # ## More Recommendations ##
 
-# In[ ]:
+# In[3]:
 
 
 radio = widgets.RadioButtons(
@@ -73,7 +73,7 @@ radio = widgets.RadioButtons(
 radio
 
 
-# In[ ]:
+# In[4]:
 
 
 morefav = da.browse_morelikethis_preview(dailydeviations[radio.value])['more_from_artist']
