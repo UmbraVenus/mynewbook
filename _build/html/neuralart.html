@@ -176,6 +176,37 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/UmbraVenus/mynewbook/main?urlpath=lab/tree/neuralart.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        <a class="jupyterhub-button" href="https://datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/UmbraVenus/mynewbook&urlpath=lab/tree/mynewbook/neuralart.ipynb&branch=main"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/UmbraVenus/mynewbook/blob/main/neuralart.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -224,6 +255,17 @@
 </div>
 <div class="section" id="how-to-run">
 <h2>How to run<a class="headerlink" href="#how-to-run" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://gist.github.com/UmbraVenus/2fd5c8ecb6166e719904f15c544aa0bf.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script src="https://gist.github.com/UmbraVenus/2fd5c8ecb6166e719904f15c544aa0bf.js"></script>
+</div></div>
+</div>
 <p>In order to run this notebook, please use the following(note that currently only those with <a class="reference external" href="http://berkeley.edu">berkeley.edu</a> have access to the following link):</p>
 <p><a class="reference external" href="https://colab.research.google.com/drive/1gfmD5vnEIV1AQZFGgpE6JCH_HeYx8eSO?usp=sharing">https://colab.research.google.com/drive/1gfmD5vnEIV1AQZFGgpE6JCH_HeYx8eSO?usp=sharing</a></p>
 </div>

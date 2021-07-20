@@ -21,6 +21,12 @@
 
 # ## How to run ##
 
+# In[1]:
+
+
+get_ipython().run_cell_magic('html', '', '<script src="https://gist.github.com/UmbraVenus/2fd5c8ecb6166e719904f15c544aa0bf.js"></script>')
+
+
 # In order to run this notebook, please use the following(note that currently only those with berkeley.edu have access to the following link):
 
 # https://colab.research.google.com/drive/1gfmD5vnEIV1AQZFGgpE6JCH_HeYx8eSO?usp=sharing
