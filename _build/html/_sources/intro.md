@@ -23,3 +23,38 @@ Where the page automatically pulls the daily recommended artwork from API in rea
 Using Machine Learning Module to apply different art styles, such as Starry Night to Monalisa, to artwork.
 ### Deep Dream Filter
 Using Machine Learning Module to apply deep dream filter to artwork.
+# Resume
+## Contact Information
+### Sage Ren
+- Mobile phone: 510-693-7743
+- Email: sage.shijie.ren (at) gmail.com
+- Email: shijieren (at) berkeley (dot) edu
+## Education
+### University of California, Berkeley
+- B.A in Data Science, Minor in Computer Science, Spring 2023
+### Related Coursework
+- Introduction to Data Science
+- Structure and Interpretation of Computer Programs
+- Data Structure
+- Linear Algebra
+- Calculus
+- Computational Structure in Data Science
+## Awards & Achievements
+- Data Scholars, 2020 - Present
+- Hera Labs Scholarship for Women in Entrepreneurship, 2018, Seeding Cohort
+- Partner, Startup Leadership San Diego Chapter, 2017-2018
+## Skills
+Software Engineering, Software Development, Computer Science, Data Structures, Python, SQL, Linux, Git, Version Control, Optimizing Code, Photoshop, Illustrator, Video Editing, Web Development, HTML, CSS, 3D Modeling, 3D Printing, C++
+## Experience
+### Software Development intern
+#### PropM, Portland, Oregon
+- Jan 2019 - Sep 2020
+- Took over the communication with the company contractor and gradually moved all development from contracting to in-house development.
+- Automated Salesforce customization for invoicing, and various daily tasks and cutting the company’s manual labor time by half, improving the profits by one-fourth.
+- Left the company to pursue systematic Data Science and Computer Science Education to further my purpose in art and technology
+### Organizer/Founder
+#### MuseFinder, San Diego, California
+- Jan 2017 - Dec 2019
+- Hosted events for artists to create a platform that connects artists together, with the goal of having artworks notarized by blockchain.
+eventually.
+- Able to gain profits through events and gathered around 200 Interviews and numerous data from artists. The events were put on pause after I went back to school for Data Science.
