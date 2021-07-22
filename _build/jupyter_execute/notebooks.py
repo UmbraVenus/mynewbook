@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Daily Deviations
+# # Daily Art Recommendations
+
+# Here shows the daily recommendations from deviant art api in real time, and according to which art you choose, you would get more recommendations of the same artist.
 
 # ## In order to use this book 
 # 

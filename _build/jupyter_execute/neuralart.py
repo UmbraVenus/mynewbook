@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Different Art Style of Deviation #
+# # Neural Art Style Transfer #
 
 # ## Example ##
 

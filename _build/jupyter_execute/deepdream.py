@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Deep Dream of Deviation #
+# # Deep Dream Filter #
 
 # ### Applying machine learning and deep dream into selected image ###
 
