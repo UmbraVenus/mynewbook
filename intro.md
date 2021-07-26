@@ -28,7 +28,6 @@ Using Machine Learning Module to apply deep dream filter to artwork.
 ### Sage Ren
 - Mobile phone: 510-693-7743
 - Email: sage.shijie.ren (at) gmail.com
-- Email: shijieren (at) berkeley (dot) edu
 ## Education
 ### University of California, Berkeley
 - B.A in Data Science, Minor in Computer Science, Spring 2023
