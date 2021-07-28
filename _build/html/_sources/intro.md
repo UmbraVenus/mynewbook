@@ -17,6 +17,13 @@ Python, C++, Swift, Web Development, iOS development, knowledge of startup, know
 ## Guides to this Portfolio
 ### Text to Music And Art Generator
 Where the user inputs a keyword, and then we use table manipulation as well as search from API to generate art and music.
+
+https://mayaks1.github.io/
+
+### Your Photo to AR (an iOS app)
+A simple AR app that lets you see your photo in an AR setting.
+
+https://apps.apple.com/us/app/your-photo-in-ar/id1578206631
 ### Daily Art Recommendation
 Where the page automatically pulls the daily recommended artwork from API in real-time, then the user can choose their favorite artwork, followed by more artworks from the same artist that the user just chose.
 ### Neural Art Style Transfer
