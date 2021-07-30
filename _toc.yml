@@ -8,3 +8,4 @@ chapters:
 - file: neuralart
 - file: deepdream
 - file: dash
+- file: bokeh

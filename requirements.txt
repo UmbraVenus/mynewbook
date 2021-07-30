@@ -1,5 +1,6 @@
 jupyter-book
-jupyter-dash
+pandas
+bokeh
 matplotlib
 numpy
 requests
@@ -8,3 +9,4 @@ deviantart
 imutils
 opencv-contrib-python
 ipywidgets
+networkx

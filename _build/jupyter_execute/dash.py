@@ -14,12 +14,22 @@ pip install jupyter-dash
 # In[2]:
 
 
+pip install pyngrok
+
+
+# In[3]:
+
+
 import plotly.express as px
 from jupyter_dash import JupyterDash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 # Load Data
+from pyngrok import ngrok
+
+tunnel = ngrok.connect(8050)
+
 df = px.data.tips()
 # Build App
 app = JupyterDash(__name__)
@@ -49,4 +59,6 @@ def update_figure(colorscale):
     )
 # Run app and display result inline in the notebook
 app.run_server(mode='inline')
+
+tunnel
 
