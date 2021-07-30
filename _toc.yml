@@ -7,3 +7,4 @@ chapters:
 - file: notebooks
 - file: neuralart
 - file: deepdream
+- file: dash
