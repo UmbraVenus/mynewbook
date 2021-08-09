@@ -13,12 +13,13 @@ During my leave from Berkeley, I tried my hands at founding my own startup. I in
 3.Monetary Issue
 I plan to use my knowledge from research to continue to explore and help to solve these problems and more.
 ## My Skills and Values
-Python, C++, Swift, Web Development, iOS development, knowledge of startup, knowledge of art
+Python, C++, Swift, Web Development, iOS development, knowledge of startup, knowledge of art, Machine Learning, Computer Vision
 ## Guides to this Portfolio
 ### Text to Music And Art Generator
 Where the user inputs a keyword, and then we use table manipulation as well as search from API to generate art and music.
 
-https://mayaks1.github.io/
+https://share.streamlit.io/umbravenus/ml4a-streamlit/main/app.py
+https://share.streamlit.io/umbravenus/streamlit/main/first_app.py
 
 ### Your Photo to AR (an iOS app)
 A simple AR app that lets you see your photo in an AR setting.
@@ -45,12 +46,14 @@ Using Machine Learning Module to apply deep dream filter to artwork.
 - Linear Algebra
 - Calculus
 - Computational Structure in Data Science
+- Machine Learning
+- Computer Vision
 ## Awards & Achievements
 - Data Scholars, 2020 - Present
 - Hera Labs Scholarship for Women in Entrepreneurship, 2018, Seeding Cohort
 - Partner, Startup Leadership San Diego Chapter, 2017-2018
 ## Skills
-Software Engineering, Software Development, Computer Science, Data Structures, Python, SQL, Linux, Git, Version Control, Optimizing Code, Photoshop, Illustrator, Video Editing, Web Development, HTML, CSS, 3D Modeling, 3D Printing, C++
+Software Engineering, Software Development, Computer Science, Data Structures, Python, SQL, Linux, Git, Version Control, Optimizing Code, Photoshop, Illustrator, Video Editing, Web Development, HTML, CSS, 3D Modeling, 3D Printing, C++, Machine Learning, Computer Vision
 ## Experience
 ### Software Development intern
 #### PropM, Portland, Oregon
