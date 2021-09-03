@@ -7,5 +7,5 @@ chapters:
 - file: notebooks
 - file: neuralart
 - file: deepdream
-- file: dash
-- file: bokeh
+#- file: dash
+#- file: bokeh
