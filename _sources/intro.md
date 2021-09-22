@@ -1,18 +1,22 @@
-# Welcome to Sage's Resume
+# Sage Ren
 
-# About me
-My name is Sage Ren. I am a student at the University of California, Berkeley, studying Data Science, class of 2023. I am passionate about the intersection of **art and technology**, specifically **generative art and computer vision**. A fun fact about me is that I make **machine learning** generated AI Art and sell them as **NFTs**.
-## Contact Information and Portfolio
+## Mission Statement
+My name is Sage Ren, a junior from UC Berkeley. I am passionate about the intersection of **art and technology**, specifically **generative art and computer vision**. I have a strong understanding of **BERT**, **OCR**, **Image Processing and Image segmentation**, **GANs** and so forth.
+
+## Portfolio
 - Email: sage.shijie.ren (at) gmail.com
 - Github: https://github.com/umbravenus
-- OCR, BERT, Visualization, NLP: https://share.streamlit.io/umbravenus/streamlit/main/first_app.py
-- Recommendation Engine, CLIP, Text to Image: https://share.streamlit.io/umbravenus/ml4a-streamlit/main/app.py
-- iOS Augmented Reality app: https://apps.apple.com/us/app/your-photo-in-ar/id1578206631
+- Linkedin: https://www.linkedin.com/in/sage-r-312631203/
+- Website: (OCR, BERT, Visualization, NLP) https://share.streamlit.io/umbravenus/streamlit/main/first_app.py
+- Website: (Recommendation Engine, CLIP, Text to Image) https://share.streamlit.io/umbravenus/ml4a-streamlit/main/app.py
+- App: (iOS Augmented Reality app) https://apps.apple.com/us/app/your-photo-in-ar/id1578206631
 
 ---
 
-## Research and Work Experience
-### Ancient World Citation Analysis (2021-present)
+## Work Experience
+### Company: Ancient World Citation Analysis 
+#### Duration: Jan 2021 - present
+#### Title: Undergraduate Student Researcher
 - Collabrated with peers and converted jupyter notebooks into machine learning **web apps**: https://share.streamlit.io/umbravenus/streamlit/main/first_app.py
 - Publised **Jupyter book** for Ancient World Citation Analysis: 
 - Built **Optical Character Recognition** Model using Pytesseract.
@@ -20,18 +24,17 @@ My name is Sage Ren. I am a student at the University of California, Berkeley, s
 - Configuring **image segmentation** tools for Ancient Artifacts.
 - *Result: Helped lab deployed machine learning models, finetuned them, and accelerated the milestones of projects.*
 
-### DSA Stroke Classification and Segmentation (2020-Present)
+### Company: DSA Stroke Classification and Segmentation
+#### Duration: Jan 2020 - Present
+#### Title: Research Assistant
 - Finetuning **image segmentation** to layout areas of brain where blood flow is lacking or will be lacking.
 - Building **image classification** tool to predict whether or not the patient need surgeries.
 - Working with 100 scholars and peers with **data labelling** tool to ease daily workload.
 - *Result: Enabled third-world country with less advanced equipments to use machine leanring to their advantage,* **patent pending.**
-### Software Development intern
-#### PropM, Portland, Oregon(Jan 2019 - Sep 2020)
-- Took over the **communication** with the company contractor and gradually moved all development from contracting to in-house development.
-- Automated Salesforce customization for invoicing, and various daily tasks and cutting the company’s manual labor time by half, improving the profits by **one-fourth**.
-- Left the company to pursue systematic Data Science and Computer Science Education to further my purpose in art and technology
-### Organizer/Founder
-#### MuseFinder, San Diego, California(Jan 2017 - Dec 2019)
+
+### Company: MuseFinder, San Diego, California
+#### Duration: Jan 2017 - Dec 2019
+#### Title: Organizer
 - Hosted events for around 500 artists to create a platform that connects artists together, with the goal of having artworks notarized by **blockchain** eventually.
 - Able to **gain profits** through events and gathered around 200 Interviews and numerous data from artists. The events were put on pause after I went back to school for Data Science.
 
@@ -81,13 +84,6 @@ https://share.streamlit.io/umbravenus/ml4a-streamlit/main/app.py
 A simple AR app that lets you see your photo in an AR setting.
 
 https://apps.apple.com/us/app/your-photo-in-ar/id1578206631
-
-### Daily Art Recommendation
-Where the page automatically pulls the daily recommended artwork from API in real-time, then the user can choose their favorite artwork, followed by more artworks from the same artist that the user just chose.
-### Neural Art Style Transfer
-Using Machine Learning Module to apply different art styles, such as Starry Night to Monalisa, to artwork.
-### Deep Dream Filter
-Using Machine Learning Module to apply deep dream filter to artwork.
 
 ---
 
