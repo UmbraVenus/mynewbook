@@ -14,7 +14,7 @@ My name is Sage Ren, a junior from UC Berkeley. I am passionate about the inters
 ---
 
 ## Work Experience
-### Company: Ancient World Citation Analysis 
+### Company: Ancient World Citation Analysis (UC Berkeley)
 #### Duration: Jan 2021 - present
 #### Title: Undergraduate Student Researcher
 - Collabrated with peers and converted jupyter notebooks into machine learning **web apps**: https://share.streamlit.io/umbravenus/streamlit/main/first_app.py
@@ -23,6 +23,15 @@ My name is Sage Ren, a junior from UC Berkeley. I am passionate about the inters
 - Optimized Text Summarization and Paraphrasing using **BERT** model.
 - Configuring **image segmentation** tools for Ancient Artifacts.
 - *Result: Helped lab deployed machine learning models, finetuned them, and accelerated the milestones of projects.*
+
+### Company: Byzantine Ivories Imagebank (UC Berkeley)
+#### Duration: June 2021 - present
+#### Title: Undergraduate Student Researcher
+- Recruited new members and helped with training.
+- **Led** members to create **documentation and tutorials**.
+- **Automated photoshop** workflow with python, saved over half of the time and effort.
+- Created **3D Models from 2D Images** using **Photogrammetry** techniques.
+- *Result: Created several internal **web apps** for team efficiency, revolutionized the workflow.*
 
 ### Company: DSA Stroke Classification and Segmentation
 #### Duration: Jan 2020 - Present
